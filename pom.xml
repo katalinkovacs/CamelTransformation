@@ -9,5 +9,11 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>customer1</module>
+    </modules>
+
+
+
 
 </project>
