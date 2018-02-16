@@ -1,22 +1,12 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="customer1">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="customers">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="customer" maxOccurs="unbounded" minOccurs="0">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element type="xs:string" name="lastname"/>
-                                        <xs:element type="xs:string" name="firstname"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+
+<xs:element name="customer1">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string"/>
+            <xs:element name="lastname" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
 </xs:schema>
