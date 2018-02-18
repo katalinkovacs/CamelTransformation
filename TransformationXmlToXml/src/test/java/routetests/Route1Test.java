@@ -21,24 +21,11 @@ import static org.hamcrest.CoreMatchers.is;
 //CamelTestSupport will give extra camel specific functionality like createCamelContext
 public class Route1Test extends CamelTestSupport {
 
-/*
-    protected CamelContext createCamelContext() throws Exception {
-        //invoking super class to create the context and
-        // we add route1 to it just like StartApp main
-        CamelContext context = super.createCamelContext();
-        context.addRoutes(new Route1());
-
-        return context;
-    }
-*/
-
-
     @Override
     protected RouteBuilder createRouteBuilder(){
         return new Route1();
     }
-
-
+    
     //Set up before running test
     @Override
     public void setUp() throws Exception{
