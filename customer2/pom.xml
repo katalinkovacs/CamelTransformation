@@ -36,7 +36,7 @@
                     <sources>
                         <source>src/main/resources/schemas/customer2.xsd</source>
                     </sources>
-                    <packageName>customer1</packageName>
+                    <packageName>customer2</packageName>
                 </configuration>
 
             </plugin>

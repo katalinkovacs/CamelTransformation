@@ -25,7 +25,7 @@ public class Route1Test extends CamelTestSupport {
     protected RouteBuilder createRouteBuilder(){
         return new Route1();
     }
-    
+
     //Set up before running test
     @Override
     public void setUp() throws Exception{

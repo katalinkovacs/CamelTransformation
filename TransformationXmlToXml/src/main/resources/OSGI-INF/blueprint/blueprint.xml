@@ -17,7 +17,7 @@
     </bean>   -->
 
 
-    <!-- Transform employee1 to employee2  -->
+    <!-- Transform customer2 to customer2  -->
 
     <bean id="route1bean" class="routes.Route1"> </bean>
 

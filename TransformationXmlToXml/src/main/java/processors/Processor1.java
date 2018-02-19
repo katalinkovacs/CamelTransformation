@@ -1,9 +1,7 @@
 package processors;
 
-//import employeeversion1.Employeeversion1;
-//import employeeversion2.Employeeversion2;
 import customer1.Customer1;
-import customer1.Customer2;
+import customer2.Customer2;
 import org.apache.camel.Exchange;
 
 
@@ -20,7 +18,7 @@ public class Processor1 {
         // this is standard camel how to get the body
         Customer1 customer1 = (Customer1) ex.getIn().getBody();
 
-        //get date from p1 object
+        //get data from p1 object
         String firstName = customer1.getFirstname();
         String lastName = customer1.getLastname();
 
