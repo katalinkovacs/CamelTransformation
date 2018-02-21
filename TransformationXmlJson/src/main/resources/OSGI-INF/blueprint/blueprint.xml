@@ -17,13 +17,31 @@
     </bean>   -->
 
 
-    <!-- Transform customer2 to customer2  -->
+    <!-- Transform customer1 to customer2  -->
 
-    <bean id="route1bean" class="routes.Route1"> </bean>
+    <!--<bean id="route1bean" class="routes.Route1"> </bean>
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="transformation-xml-to-xml">
+        <routeBuilder ref="route1bean" id="route1" />
+    </camelContext> -->
+
+    <!-- Transform customer2 to customer1  -->
+
+   <!-- <bean id="route2bean" class="routes.Route2"> </bean>
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="transformation-xml-to-xml-v2">
+        <routeBuilder ref="route2bean" id="route2" />
+    </camelContext>  -->
+
+    <bean id="route1bean" class="routes.Route1"> </bean>    <!-- Transform customer1 to customer2  -->
+    <bean id="route2bean" class="routes.Route2"> </bean>    <!-- Transform customer2 to customer1  -->
 
     <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="transformation-xml-to-xml">
         <routeBuilder ref="route1bean" id="route1" />
+        <routeBuilder ref="route2bean" id="route2" />
     </camelContext>
+
+
+
+
 
 
 
