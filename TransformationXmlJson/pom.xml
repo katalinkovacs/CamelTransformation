@@ -28,6 +28,12 @@
             <version>1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>CamelFileTransformation</groupId>
+            <artifactId>customer3</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
 
 

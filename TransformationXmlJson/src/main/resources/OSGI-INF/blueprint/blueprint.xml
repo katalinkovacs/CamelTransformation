@@ -33,10 +33,12 @@
 
     <bean id="route1bean" class="routes.Route1"> </bean>    <!-- Transform customer1 to customer2  -->
     <bean id="route2bean" class="routes.Route2"> </bean>    <!-- Transform customer2 to customer1  -->
+    <bean id="route3bean" class="routes.Route3"> </bean>    <!-- Transform customer2 to customer1  -->
 
-    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="transformation-xml-to-xml">
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="transformation-xml-xml-json">
         <routeBuilder ref="route1bean" id="route1" />
         <routeBuilder ref="route2bean" id="route2" />
+        <routeBuilder ref="route3bean" id="route3" />
     </camelContext>
 
 
